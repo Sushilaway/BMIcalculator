@@ -44,7 +44,7 @@
     android:layout_gravity="center_horizontal"
     android:text="Calculate BMI"
     android:onClick="calculateBMI"
-    android:layout_margin="20dp"
+    android:layout_margin="21dp"
 
     />
 
