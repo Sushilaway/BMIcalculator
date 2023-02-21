@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (!weightString.isEmpty() && !heightString.isEmpty()) {
             float weight = Float.parseFloat(weightString);
-            float height = Float.parseFloat(heightString);
+            float height = Float.parseFloat(heightString)/100;
 
             float bmi = weight / (height * height);
             String bmiString = String.format("%.2f", bmi);
