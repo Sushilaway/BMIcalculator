@@ -44,10 +44,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (!weightString.isEmpty() && !heightString.isEmpty()) {
             float weight = Float.parseFloat(weightString);
-            float height = Float.parseFloat(heightString)/100;
+            float height = Float.parseFloat(heightString)   / 100;
 
-            float bmi = weight / (height * height);
-            String bmiString = String.format("%.2f", bmi);
+            float bmi = weight / ( height * height );
+
 
 
 
@@ -63,11 +63,13 @@ public class MainActivity extends AppCompatActivity {
             else if(bmi >=25 && bmi<=29.9){
                 BMIresult="Over weight";
             }
-            resultTextView.setText("Your BMI is " + bmiString );
+            calculation = "result:\n\n" + bmi + "\n" +BMIresult;
+            resultTextView.setText("Your BMI is " + bmi);
             discription.setText( BMIresult );
         } else {
             Toast.makeText(this, "Please enter weight and height", Toast.LENGTH_SHORT).show();
         }
+
 
     }
 }
