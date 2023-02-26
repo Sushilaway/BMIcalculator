@@ -13,6 +13,7 @@ import com.example.bmicalculator.R;
 public class MainActivity extends AppCompatActivity {
     private EditText weight;
     private EditText height;
+    private EditText Name;
     private TextView resultTextView ;
     private TextView discription;
     String calculation, BMIresult  ;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         height = findViewById(R.id.height);
         resultTextView = findViewById(R.id.resultTextView);
         discription = findViewById(R.id.discription);
+        Name = findViewById(R.id.Name);
 
 
         Button calculateButton = findViewById(R.id.calculate_button);
@@ -41,10 +43,12 @@ public class MainActivity extends AppCompatActivity {
     private void calculateBMI() {
         String weightString = weight.getText().toString();
         String heightString = height.getText().toString();
+        String NameString = Name.getText().toString();
 
         if (!weightString.isEmpty() && !heightString.isEmpty()) {
             float weight = Float.parseFloat(weightString);
             float height = Float.parseFloat(heightString)   / 100;
+
 
             float bmi = weight / ( height * height );
 
@@ -63,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
             else if(bmi >=25 && bmi<=29.9){
                 BMIresult="Over weight";
             }
-            calculation = "result:\n\n" + bmi + "\n" +BMIresult;
-            resultTextView.setText("Your BMI is " + bmi);
+            calculation = "result:\n\n" +NameString + bmi + "\n" +BMIresult;
+            resultTextView.setText( NameString + "your BMI is " + bmi);
             discription.setText( BMIresult );
         } else {
             Toast.makeText(this, "Please enter weight and height", Toast.LENGTH_SHORT).show();
