@@ -1,6 +1,8 @@
 package com.example.bmicalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText Name;
     private TextView resultTextView ;
     private TextView discription;
+    private Button button;
     String calculation, BMIresult  ;
 
 
@@ -29,6 +32,23 @@ public class MainActivity extends AppCompatActivity {
         resultTextView = findViewById(R.id.resultTextView);
         discription = findViewById(R.id.discription);
         Name = findViewById(R.id.Name);
+
+        button = (Button)findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(BMIresult == "Severely under weight" ||  BMIresult=="under weight" ){
+                    Intent intent = new Intent(MainActivity.this, Activity2.class);
+                    startActivity(intent);
+
+                } else if( BMIresult=="Over weight") {
+
+                    Intent intent = new Intent(MainActivity.this, Activity3.class);
+                    startActivity(intent);
+                }
+
+            }
+        });
 
 
         Button calculateButton = findViewById(R.id.calculate_button);
@@ -67,11 +87,11 @@ public class MainActivity extends AppCompatActivity {
             else if(bmi >=25 && bmi<=29.9){
                 BMIresult="Over weight";
             }
-            calculation = "result:\n\n" +NameString + bmi + "\n" +BMIresult;
-            resultTextView.setText( NameString + "your BMI is " + bmi);
+            calculation = "result:\n\n" + NameString + bmi + "\n" +BMIresult;
+            resultTextView.setText( NameString +  " your BMI is " + bmi);
             discription.setText( BMIresult );
         } else {
-            Toast.makeText(this, "Please enter weight and height", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please enter  name , weight and height", Toast.LENGTH_SHORT).show();
         }
 
 
