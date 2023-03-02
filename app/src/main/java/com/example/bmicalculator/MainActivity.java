@@ -80,7 +80,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                         mmale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.buttonbackground));
+                        mfemale.setBackground(null);
                         typerofuser="Male";
+
 
             }
         });
@@ -90,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
           @Override
           public void onClick(View v) {
               mfemale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.buttonbackground));
+             mmale.setBackground(null);
               typerofuser="Female";
           }
       });

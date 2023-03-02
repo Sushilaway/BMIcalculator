@@ -103,19 +103,19 @@ public class bmiactivity extends AppCompatActivity {
         }
         else if(intbmi <29.9 && intbmi>25)
         {
-            mbmicategory.setText("Overweight");
+            mbmicategory.setText("Mildly Overweight");
             mbackground.setBackgroundColor(R.color.halfwarn);
             mimageview.setImageResource(R.drawable.warning);
         }
         else if(intbmi<34.9 && intbmi>30)
         {
-            mbmicategory.setText("Obese Class I");
+            mbmicategory.setText("Overweight");
             mbackground.setBackgroundColor(R.color.halfwarn);
             mimageview.setImageResource(R.drawable.warning);
         }
         else
         {
-            mbmicategory.setText("Obese Class II");
+            mbmicategory.setText("Severely Overweight");
             mbackground.setBackgroundColor(R.color.warn);
             mimageview.setImageResource(R.drawable.crosss);
         }
