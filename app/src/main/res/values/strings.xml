@@ -1,27 +1,28 @@
 <resources>
-    <string name="app_name">BMI calculator</string>
-    <string name="Details1">
-        Some good dietary choices for someone who is underweight might are:
-       1.Eating frequent, small meals throughout the day.
-       2.Including protein-rich foods like lean meats, poultry, fish, eggs, beans, and tofu in your diet.
-       3.Eating healthy fats such as nuts, seeds, avocado, and olive oil.
-       4.Incorporating whole grains, fruits, and vegetables for additional nutrients and fiber.
+    <string name="app_name">BMI Calculator</string>
+    <string name="unit">Cm</string>
+    <string name="femaletext">Female</string>
+    <string name="age">Age</string>
+    <string name="startingheight">0</string>
+    <string name="startingweight">50</string>
+    <string name="startingage">20</string>
+    <string name="todo">TODO</string>
+    <string name="height">Height</string>
+    <string name="calculate_your_bmi">Calculate Your BMI</string>
+    <string name="weight">Weight</string>
+    <string name="male">Male</string>
+    <string name="underweight">Some good dietary choices for someone who is underweight might are:\n
+        \n1.Eating frequent, small meals throughout the day.\n
+        \n2.Including protein-rich foods like lean meats, poultry, fish, eggs, beans, and tofu in your diet.\n
+        \n3.Eating healthy fats such as nuts, seeds, avocado, and olive oil.\n
+        \n4.Incorporating whole grains, fruits, and vegetables for additional nutrients and fiber.\n
+    </string>
+    <string name="overweigtht">Here are some general tips for healthy eating habits to maintain your BMI:\n
+        \n1.Focus on whole foods: Choose whole, minimally processed foods such as fruits, vegetables, whole grains, lean protein sources, and healthy fats.\n
+        \n2.Limit added sugars: Avoid sugary drinks and foods like soda, candy, and baked goods, which can contribute to weight gain.\n
+        \n3.Watch portion sizes: Be mindful of how much you are eating and aim for smaller portions.\n
+        \n4.Stay hydrated: Drink plenty of water and avoid sugary drinks like soda and juice.\n
+        \n5.It is also important to incorporate regular physical activity into your routine, as this can help boost weight loss and improve overall health.\n
+    </string>
 
-
-</string>
-    <string name="details2">
-        <item> Here are some general tips for healthy eating habits to maintain you high BMI:</item>
-        <item>1.Focus on whole foods: Choose whole, minimally processed foods such as fruits,
-        vegetables, whole grains, lean protein sources, and healthy fats.</item>
-        <item>2.Limit added sugars: Avoid sugary drinks and foods like soda, candy, and baked goods,
-            which can contribute to weight gain.</item>
-        <item>3.Watch portion sizes: Be mindful of how much you are eating and aim for smaller portions.</item>
-        <item>4.Keep track of what you eat: Consider tracking your food intake using a food journal
-            or a mobile app to help you stay accountable and make healthier choices.</item>
-        <item>5.Stay hydrated: Drink plenty of water and avoid sugary drinks like soda and juice.</item>
-        <item>6.Be consistent: Make healthy eating a regular part of your lifestyle, rather than a short-term fix.</item>
-        <item>It is also important to incorporate regular physical activity into your routine,
-             as this can help boost weight loss and improve overall health.</item>
-
-</string>
 </resources>
