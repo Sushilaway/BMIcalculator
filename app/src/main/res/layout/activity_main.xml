@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1E1D1D"
+    android:background="@color/light_white"
     tools:context=".MainActivity">
 
 
@@ -17,10 +17,10 @@
 
 
     <RelativeLayout
+        android:id="@+id/centerverticalline"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:id="@+id/centerverticalline">
+        android:layout_centerInParent="true">
 
     </RelativeLayout>
 
@@ -188,6 +188,7 @@
         android:textStyle="bold"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:backgroundTint="@color/dark_blue"
         >
 
     </android.widget.Button>
@@ -252,6 +253,7 @@
                 android:layout_height="30dp"
                 android:src="@drawable/minus"
                 android:background="@drawable/buttonbackground"
+                android:backgroundTint="@color/dark_blue"
                 android:id="@+id/decrementweight"
                 android:contentDescription="@string/todo">
 
@@ -274,6 +276,7 @@
                 android:layout_height="30dp"
                 android:id="@+id/incremetweight"
                 android:background="@drawable/buttonbackground"
+                android:backgroundTint="@color/dark_blue"
                 android:src="@drawable/add"
                 android:contentDescription="@string/todo">
 
@@ -344,6 +347,7 @@
                 android:src="@drawable/minus"
                 android:id="@+id/decrementage"
                 android:background="@drawable/buttonbackground"
+                android:backgroundTint="@color/dark_blue"
                 android:contentDescription="@string/todo">
 
             </ImageView>
@@ -366,6 +370,7 @@
                 android:id="@+id/incrementage"
                 android:src="@drawable/add"
                 android:background="@drawable/buttonbackground"
+                android:backgroundTint="@color/dark_blue"
                 android:contentDescription="@string/todo">
 
             </ImageView>
